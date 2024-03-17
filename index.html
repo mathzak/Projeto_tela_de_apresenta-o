@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio de Projeto</title>
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link para a biblioteca Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
+        <!-- Imagem do perfil do usuário -->
         <img class="profile-img" src="" alt="Foto do Usuário">
+        <!-- Nome do usuário -->
         <h2 class="nome"></h2>
+        <!-- Email do usuário -->
         <p class="email"></p>
         <div class="content-container">
+            <!-- Botão de alternância de perfil -->
             <div class="ball-button">
                 <div class="ball"></div>
             </div>
+            <!-- Botão para visualizar configurações -->
             <button class="trigger" onclick="showModal('config')">Visualizar Configurações</button>
+            <!-- Modal para configurações -->
             <div class="modal" id="modal-config">
                 <div class="modal-content">
                     <span class="close-button" onclick="closeModal('config')">&times;</span>
+                    <!-- Lista de opções de configuração -->
                     <ul>
                         <li>Alterar idioma</li>
                         <li>Alterar senha</li>
@@ -27,10 +36,13 @@
                     </ul>
                 </div>
             </div>
+            <!-- Botão para ajustar foto -->
             <button class="trigger" onclick="showModal('photo')">Ajustar Foto</button>
+            <!-- Modal para ajustar foto -->
             <div class="modal" id="modal-photo">
                 <div class="modal-content">
                     <span class="close-button" onclick="closeModal('photo')">&times;</span>
+                    <!-- Lista de opções para ajustar foto -->
                     <ul>
                         <li>Largura</li>
                         <li>Comprimento</li>
@@ -39,11 +51,13 @@
                 </div>
             </div>
         </div>
+        <!-- Ícones das redes sociais -->
         <div class="social-icons">
-            <a href="https://github.com/" target="_blank"><img src=".\Imagens\github.png" alt="GitHub"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src=".\Imagens\instagram.png" alt="Instagram"></a>
-            <a href="https://br.linkedin.com/" target="_blank"><img src=".\Imagens\linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/" target="_blank"><img src="Imagens/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://br.linkedin.com/" target="_blank"><img src="Imagens/linkedin.png" alt="LinkedIn"></a>
         </div>
+        <!-- Menu dropdown -->
         <nav class="dp-menu">
             <ul>
                 <li><a href="#">Feito com <i class="fa fa-caret-down"></i></a>
@@ -56,6 +70,7 @@
             </ul>
         </nav>
     </header>
+    <!-- Inclusão do arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

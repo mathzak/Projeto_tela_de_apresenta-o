@@ -1,3 +1,4 @@
+/* Define as variáveis de cores */
 :root {
     --cor-fundo1: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(68,87,130,1) 58%);
     --cor-fundo2: linear-gradient(166deg, rgba(63,94,251,1) 0%, rgba(237,10,56,0.6615896358543417) 100%);
@@ -14,7 +15,7 @@
     --cor-preto-transparencia5: rgba(0, 0, 0, 0.5);
 }
 
-
+/* Estilos globais */
 body {
     margin: 0;
     padding: 0;
@@ -24,17 +25,20 @@ body {
     height: 100vh;
 }
 
+/* Estilos para o cabeçalho */
 header {
     text-align: center;
     padding: 15px;
 }
 
+/* Estilos para a imagem do perfil */
 .profile-img {
     width: 150px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
+/* Botão de alternância de perfil */
 .ball-button {
     position: relative;
     width: 50px;
@@ -45,7 +49,7 @@ header {
     background-color: var(bra);
     margin-top: 15px;
 }
-
+/* Bola dentro do botão */
 .ball {
     position:absolute;
     top: -2.5px;
@@ -57,18 +61,22 @@ header {
     transition: left 1s;
 }
 
+/* Movimento da bola */
 .ball-move {
     left: calc(100% - 20px);
 }
 
+/* Tema escuro */
 body.dark {
     background: var(--cor-fundo2)
 }
 
+/* Estilos para inverter as cores */
 .invert-colors {
     color: var(--cor-preto); 
 }
 
+/* Estilos para botões e menus invertidos */
 .invert-colors .content-container .ball-button{
     border: 1px solid var(--cor-preto-transparencia3);
 }
@@ -98,11 +106,13 @@ body.dark {
     filter: invert(1);
 }
 
+/* Estilos para imagens */
 img {
     width: 30px;
     margin-bottom: 10px;
 }
 
+/* Estilos para o contêiner de conteúdo */
 .content-container {
     display: flex;
     align-items: center;
@@ -110,6 +120,7 @@ img {
     justify-content: center;
 }
 
+/* Estilos para modais */
 .modal {
     z-index: 1;
     position: fixed;
@@ -164,6 +175,7 @@ img {
     display: flex;
 }
 
+/* Estilos para botões */
 .content-container button {
     width: 400px;
     height: 45px;
@@ -182,6 +194,7 @@ img {
     color: var(--cor-azul);
 }
 
+/* Estilos para ícones de redes sociais */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -200,6 +213,7 @@ img {
     transform: scale(2);
 }
 
+/* Estilos para o menu dropdown */
 .dp-menu ul {
     list-style-type: none;
     padding: 0;
