@@ -1,0 +1,150 @@
+:root {
+    --cor-fundo1: linear-gradient(135deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+    --cor-fundo2: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(237,10,56,1) 100%);
+    --cor-hover: rgb(5, 5, 5);
+    --cor-branco: white;
+    --cor-branco-transparencia1: rgba(255, 255, 255, 0.1);
+    --cor-branco-transparencia2: rgba(255, 255, 255, 0.2);
+    --cor-branco-transparencia3: rgba(255, 255, 255, 0.3);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--cor-branco);
+    background: var(--cor-fundo1);
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ball-button {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid var(--cor-branco-transparencia3);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 15px;
+}
+
+.ball {
+    position:absolute;
+    top: -2.5px;
+    left: 0;
+    width: 25px;
+    height: 125%;
+    border-radius: 50%;
+    background-color: var(--cor-branco);
+    transition: left 1s;
+}
+
+.ball-move {
+    left: calc(100% - 20px);
+}
+
+body.dark {
+    background: var(--cor-fundo2)
+}
+
+img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container button{
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--cor-branco);
+    color: var(--cor-branco);
+    padding: 10px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.content-container button:hover {
+    background-color: var(--cor-branco);
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: transform 0.8s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(2);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    margin: 0px;
+}
+
+.dp-menu ul {
+    background-color: transparent;
+}
+
+.dp-menu ul li {
+    display: block;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    padding: auto;
+    display: block;
+}
+
+.dp-menu ul li a:hover{
+    color: var(--cor-hover);
+}
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+    position: relative;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
