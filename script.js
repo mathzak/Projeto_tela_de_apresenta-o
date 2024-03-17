@@ -1,11 +1,21 @@
+function showModal(type) {
+    var modal = document.getElementById("modal-" + type);
+    modal.classList.add("show-modal");
+}
+
+function closeModal(type) {
+    var modal = document.getElementById("modal-" + type);
+    modal.classList.remove("show-modal");
+}
+
 const users = [
     {
-        imagem: "C:/Users/tchec/OneDrive/Documentos/Projetos/Imagens/joaoprofilephoto.jpg",
+        imagem: "./Imagens/joaoprofilephoto.jpg",
         nome: "João",
         email: "joao@email.com"
     },
     {
-        imagem: "C:/Users/tchec/OneDrive/Documentos/Projetos/Imagens/anaprofilephoto.jpg",
+        imagem: "./Imagens/anaprofilephoto.jpg",
         nome: "Ana",
         email: "ana@email.com"
     }
@@ -26,6 +36,12 @@ document.querySelector('.ball').addEventListener('click', (e) => {
 
     currentUserIndex = (currentUserIndex + 1) % users.length;
     updateUser();
+
+    if (currentUserIndex === 1) {
+        document.body.classList.add('invert-colors');
+    } else {
+        document.body.classList.remove('invert-colors');
+    }
 });
 
 updateUser();
