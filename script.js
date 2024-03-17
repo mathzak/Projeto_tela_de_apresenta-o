@@ -46,7 +46,7 @@ document.querySelector('.ball').addEventListener('click', (e) => {
     // Alterna a classe 'ball-move' para a animação do botão
     e.target.classList.toggle('ball-move');
     // Alterna a classe 'dark' para mudar o tema da página
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('ana');
 
     // Atualiza o índice do usuário para o próximo da lista
     currentUserIndex = (currentUserIndex + 1) % users.length;

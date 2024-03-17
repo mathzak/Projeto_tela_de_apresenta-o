@@ -66,8 +66,8 @@ header {
     left: calc(100% - 20px);
 }
 
-/* Tema escuro */
-body.dark {
+/* Tema usuário Ana */
+body.ana {
     background: var(--cor-fundo2)
 }
 
