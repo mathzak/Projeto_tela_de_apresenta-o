@@ -1,8 +1,8 @@
-# Documentação do Projeto Desafio
+# Documentação do Projeto Tela de Apresentação
 
 ## Introdução
 
-O Projeto Desafio consiste em uma página web interativa com funcionalidades como visualização de configurações, ajuste de foto e navegação em um menu. O desenvolvimento foi realizado utilizando as tecnologias HTML, CSS e JavaScript.
+O Projeto Tela de Apresentação consiste em uma página web interativa com funcionalidades como visualização de configurações, ajuste de foto e navegação em um menu. O desenvolvimento foi realizado utilizando as tecnologias HTML, CSS e JavaScript.
 
 ## Instalação e Configuração
 
