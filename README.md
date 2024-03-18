@@ -13,7 +13,7 @@ Para utilizar o projeto localmente, siga estas instruções:
 
 ## Estrutura do Projeto
 
-O projeto Desafio é estruturado da seguinte forma:
+O projeto é estruturado da seguinte forma:
 
 - `index.html`: O arquivo HTML principal que contém a estrutura da página.
 - `style.css`: O arquivo CSS responsável pela estilização da página.
