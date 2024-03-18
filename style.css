@@ -11,6 +11,7 @@
     --cor-branco-transparencia1: rgba(255, 255, 255, 0.1);
     --cor-branco-transparencia2: rgba(255, 255, 255, 0.2);
     --cor-branco-transparencia3: rgba(255, 255, 255, 0.3);
+    --cor-branco-transparencia7: rgba(255, 255, 255, 0.7);
     --cor-preto-transparencia3: rgba(0, 0, 0, 0.3);
     --cor-preto-transparencia5: rgba(0, 0, 0, 0.5);
 }
@@ -135,9 +136,10 @@ img {
 }
 
 .modal-content {
-    background-color: var(--cor-branco);
+    background-color: var(--cor-branco-transparencia7);
     padding: 16px 24px;
     width: 384px;
+    border: 1px solid var(--cor-preto);
     border-radius: 0.5rem;
     color: var(--cor-preto);
 }
@@ -190,8 +192,8 @@ img {
 }
 
 .content-container button:hover {
-    background-color: var(--cor-branco);
-    color: var(--cor-azul);
+    background-color: var(--cor-branco-transparencia7);
+    color: var(--cor-preto);
 }
 
 /* Estilos para ícones de redes sociais */
