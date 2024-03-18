@@ -1,16 +1,12 @@
 // Função para exibir o modal
 function showModal(type) {
-    // Obtém o modal pelo ID
-    var modal = document.getElementById("modal-" + type);
-    // Adiciona a classe 'show-modal' para exibir o modal
+    const modal = document.getElementById(`modal-${type}`);
     modal.classList.add("show-modal");
 }
 
 // Função para fechar o modal
 function closeModal(type) {
-    // Obtém o modal pelo ID
-    var modal = document.getElementById("modal-" + type);
-    // Remove a classe 'show-modal' para ocultar o modal
+    const modal = document.getElementById(`modal-${type}`);
     modal.classList.remove("show-modal");
 }
 
@@ -33,35 +29,54 @@ let currentUserIndex = 0;
 
 // Função para atualizar as informações do usuário na página
 function updateUser() {
-    // Obtém o usuário atual
     const currentUser = users[currentUserIndex];
-    // Atualiza a imagem, nome e email do perfil na página
     document.querySelector('.profile-img').src = currentUser.imagem;
     document.querySelector('.nome').textContent = currentUser.nome;
     document.querySelector('.email').textContent = currentUser.email;
 }
 
 // Event listener para o botão de mudança de perfil
-document.querySelector('.ball').addEventListener('click', (e) => {
-    // Alterna a classe 'ball-move' para a animação do botão
-    e.target.classList.toggle('ball-move');
-    // Alterna a classe 'dark' para mudar o tema da página
-    document.body.classList.toggle('ana');
-
-    // Atualiza o índice do usuário para o próximo da lista
+document.querySelector('.ball').addEventListener('click', (event) => {
+    const ball = event.currentTarget;
+    ball.classList.toggle('ball-move');
+    document.body.classList.toggle('body-user2');
     currentUserIndex = (currentUserIndex + 1) % users.length;
-    // Atualiza as informações do usuário na página
     updateUser();
 
-    // Verifica se o perfil atual é o da Ana
-    if (currentUserIndex === 1) {
-        // Adiciona a classe 'invert-colors' para inverter as cores
-        document.body.classList.add('invert-colors');
-    } else {
-        // Remove a classe 'invert-colors' se o perfil não for o da Ana
-        document.body.classList.remove('invert-colors');
-    }
+    const isAnaProfile = (currentUserIndex === 1);
+    document.body.classList.toggle('invert-colors', isAnaProfile);
 });
+
+// Função para abrir input de texto para alterar o nome ou email do usuário
+function changeInfo(type) {
+    let newInfo;
+    if (type === 'name') {
+        newInfo = prompt("Digite o novo nome:");
+        if (newInfo && newInfo.trim() !== "") {
+            users[currentUserIndex].nome = newInfo;
+        }
+    } else if (type === 'email') {
+        newInfo = prompt("Digite o novo email:");
+        if (newInfo && newInfo.trim() !== "") {
+            users[currentUserIndex].email = newInfo;
+        }
+    }
+    updateUser();
+}
+
+// Função para abrir input de texto para ajustar o tamanho da foto do usuário
+function changePhotoSize() {
+    let newSize = prompt("Digite o novo tamanho da foto (entre 100 e 320):");
+    newSize = parseInt(newSize);
+
+    if (!isNaN(newSize) && newSize >= 100 && newSize <= 320) {
+        const profileImg = document.querySelector('.profile-img');
+        profileImg.style.width = newSize + 'px';
+        profileImg.style.height = 'auto';
+    } else {
+        alert("Por favor, insira um valor numérico entre 100 e 320.");
+    }
+}
 
 // Chama a função para atualizar as informações do usuário ao carregar a página
 updateUser();

@@ -2,11 +2,11 @@
 
 ## Introdução
 
-Este projeto Desafio consiste em uma página web com funcionalidades interativas, como visualização de configurações, ajuste de foto e navegação em um menu. Ele foi desenvolvido utilizando HTML, CSS e JavaScript.
+O Projeto Desafio consiste em uma página web interativa com funcionalidades como visualização de configurações, ajuste de foto e navegação em um menu. O desenvolvimento foi realizado utilizando as tecnologias HTML, CSS e JavaScript.
 
 ## Instalação e Configuração
 
-Para utilizar este projeto localmente, siga estas instruções:
+Para utilizar o projeto localmente, siga estas instruções:
 
 1. Clone o repositório em seu ambiente de desenvolvimento.
 2. Abra o arquivo `index.html` em seu navegador web.
@@ -29,9 +29,9 @@ O projeto Desafio é estruturado da seguinte forma:
 
 ## Funcionalidades Principais
 
-1. **Visualização de Configurações:** Ao clicar no botão "Visualizar Configurações", uma modal é exibida ao usuário, permitindo a ele alterar idioma, senha ou solicitar ajuda.
+1. **Visualização de Configurações:** Ao clicar no botão "Visualizar Configurações", uma modal é exibida ao usuário, permitindo que ele altere o nome ou o e-mail do perfil.
 
-2. **Ajuste de Foto:** Ao clicar no botão "Ajustar Foto", uma modal é aberta, permitindo ao usuário ajustar a largura, comprimento ou mudar a foto de perfil.
+2. **Ajuste de Foto:** Ao clicar no botão "Ajustar Foto", uma modal é aberta, permitindo ao usuário ajustar o tamanho da foto de perfil.
 
 3. **Navegação em Menu:** O menu "Feito com" permite ao usuário navegar por diferentes tecnologias utilizadas no projeto, como HTML, CSS e JavaScript.
 

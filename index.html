@@ -11,11 +11,9 @@
 </head>
 <body>
     <header>
-        <!-- Imagem do perfil do usuário -->
+        <!-- Informações do usuário -->
         <img class="profile-img" src="" alt="Foto do Usuário">
-        <!-- Nome do usuário -->
         <h2 class="nome"></h2>
-        <!-- Email do usuário -->
         <p class="email"></p>
         <div class="content-container">
             <!-- Botão de alternância de perfil -->
@@ -30,9 +28,9 @@
                     <span class="close-button" onclick="closeModal('config')">&times;</span>
                     <!-- Lista de opções de configuração -->
                     <ul>
-                        <li>Alterar idioma</li>
-                        <li>Alterar senha</li>
-                        <li>Ajuda</li>
+                        <!-- Botões para alterar informações do usuário -->
+                        <li><button class="changeInfo" onclick="changeInfo('name')">Alterar Nome</button></li>
+                        <li><button class="changeInfo" onclick="changeInfo('email')">Alterar Email</button></li>
                     </ul>
                 </div>
             </div>
@@ -42,11 +40,9 @@
             <div class="modal" id="modal-photo">
                 <div class="modal-content">
                     <span class="close-button" onclick="closeModal('photo')">&times;</span>
-                    <!-- Lista de opções para ajustar foto -->
+                    <!-- Botão para ajustar o tamanho da foto do usuário -->
                     <ul>
-                        <li>Largura</li>
-                        <li>Comprimento</li>
-                        <li>Mudar foto</li>
+                        <button class="changePhotoSize" onclick="changePhotoSize()">Tamanho da Foto</button>
                     </ul>
                 </div>
             </div>
